@@ -15,7 +15,7 @@
 		62C807EB29699054007DA1EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62C807E929699054007DA1EA /* LaunchScreen.storyboard */; };
 		62C807F6296B0966007DA1EA /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C807F5296B0966007DA1EA /* AuthViewController.swift */; };
 		62C807FE296B0EAB007DA1EA /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C807FD296B0EAB007DA1EA /* UIFont.swift */; };
-		62C80802296B4C7F007DA1EA /* ButtonContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C80801296B4C7F007DA1EA /* ButtonContainerView.swift */; };
+		62C80802296B4C7F007DA1EA /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C80801296B4C7F007DA1EA /* TextFieldView.swift */; };
 		62C80805296B500A007DA1EA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C80804296B500A007DA1EA /* UIColor.swift */; };
 		62C80809296B515B007DA1EA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C80808296B515B007DA1EA /* Constants.swift */; };
 /* End PBXBuildFile section */
@@ -31,7 +31,7 @@
 		62C807EC29699054007DA1EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62C807F5296B0966007DA1EA /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		62C807FD296B0EAB007DA1EA /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
-		62C80801296B4C7F007DA1EA /* ButtonContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonContainerView.swift; sourceTree = "<group>"; };
+		62C80801296B4C7F007DA1EA /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 		62C80804296B500A007DA1EA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		62C80808296B515B007DA1EA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,7 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				62C807F5296B0966007DA1EA /* AuthViewController.swift */,
-				62C80801296B4C7F007DA1EA /* ButtonContainerView.swift */,
+				62C80801296B4C7F007DA1EA /* TextFieldView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,7 +208,7 @@
 				62C80809296B515B007DA1EA /* Constants.swift in Sources */,
 				62C807E629699052007DA1EA /* Laboratory.xcdatamodeld in Sources */,
 				62C807DE29699052007DA1EA /* SceneDelegate.swift in Sources */,
-				62C80802296B4C7F007DA1EA /* ButtonContainerView.swift in Sources */,
+				62C80802296B4C7F007DA1EA /* TextFieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

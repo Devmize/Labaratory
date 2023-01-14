@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ButtonContainerView: UIView {
+final class TextFieldView: UIView {
 
     init(label: UILabel, textField: UITextField) {
         super.init(frame: .zero)
@@ -28,7 +28,7 @@ class ButtonContainerView: UIView {
             textField.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 3),
             textField.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             textField.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            textField.heightAnchor.constraint(equalToConstant: 45),
+            textField.heightAnchor.constraint(equalToConstant: 50),
         ])
         
         self.bottomAnchor.constraint(equalTo: textField.bottomAnchor).isActive = true
