@@ -10,7 +10,7 @@ import UIKit
 enum Constants {
     
     enum Colors {
-        static let backgroundAppColor: UIColor = .init(hexString: "FDE3E2")
+        static let backgroundAppColor: UIColor = .init(hexString: "EDCEC4")
         static let backgroundButtonColor: UIColor = .init(hexString: "A67F83")
     }
 }

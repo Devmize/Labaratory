@@ -10,7 +10,11 @@ import UIKit
 final class AuthViewController: UIViewController {
     
     // MARK: - UIElements
-    lazy var loginLabel: UILabel = {
+    
+    private let loginTextField = CustomTextField(placeholder: "")
+    private let passwordTextField = CustomTextField(placeholder: "")
+    
+    private lazy var loginLabel: UILabel = {
         let label = UILabel()
         label.text = "Login"
         label.font = .init(name: "avenir", size: 20)
@@ -18,17 +22,7 @@ final class AuthViewController: UIViewController {
         return label
     }()
     
-    lazy var loginTextField: UITextField = {
-        let textField = UITextField()
-        textField.font = .init(name: "avenir", size: 20)
-        textField.textAlignment = .center
-        textField.backgroundColor = .white
-        textField.textColor = .black
-        textField.layer.cornerRadius = 5
-        return textField
-    }()
-    
-    lazy var passwordLabel: UILabel = {
+    private lazy var passwordLabel: UILabel = {
         let label = UILabel()
         label.text = "Password"
         label.font = .init(name: "avenir", size: 20)
@@ -36,17 +30,7 @@ final class AuthViewController: UIViewController {
         return label
     }()
     
-    lazy var passwordTextField: UITextField = {
-        let textField = UITextField()
-        textField.font = .init(name: "avenir", size: 20)
-        textField.textAlignment = .center
-        textField.backgroundColor = .white
-        textField.textColor = .black
-        textField.layer.cornerRadius = 5
-        return textField
-    }()
-    
-    lazy var signInButton: UIButton = {
+    private lazy var signInButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Sign In", for: .normal)
         button.setTitleColor(.white, for: .normal)
@@ -57,7 +41,7 @@ final class AuthViewController: UIViewController {
         return button
     }()
     
-    lazy var signUpButton: UIButton = {
+    private lazy var signUpButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Sign Up", for: .normal)
         button.setTitleColor(.red, for: .normal)
@@ -72,6 +56,7 @@ final class AuthViewController: UIViewController {
 
         self.view.backgroundColor = Constants.Colors.backgroundAppColor
         setupConstrains()
+        createTapGesture()
     }
 }
 
@@ -122,7 +107,17 @@ extension AuthViewController {
         NSLayoutConstraint.activate([
             self.signUpButton.topAnchor.constraint(equalTo: self.signInButton.bottomAnchor, constant: 7),
             self.signUpButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-            self.signUpButton.heightAnchor.constraint(equalToConstant: 30),
+            self.signUpButton.heightAnchor.constraint(equalToConstant: 30)
         ])
+    }
+}
+
+// MARK: - UITapGestureRecognizer
+extension AuthViewController {
+    
+    private func createTapGesture() {
+        
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        self.view.addGestureRecognizer(tap)
     }
 }

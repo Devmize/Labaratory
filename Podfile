@@ -7,4 +7,9 @@ target 'Laboratory' do
 
   # Pods for Laboratory
 
+	pod 'SwiftLint'
+	pod 'SnapKit'
+	pod 'Alamofire'
+	pod 'Moya'
+
 end
